@@ -7,9 +7,9 @@
 </li>
 {{/unless}}
 
-
+{{!-- not sure we need the data-newdevoured part --}}
 {{#if devoured}}
-	<li class="list-group-item list-group-item-dark align-items-center" style="border-color:black">
+	<li class="list-group-item list-group-item-dark align-items-center" style="border-color:black" data-id="{{id}}" data-newdevoured="{{devoured}}">
 		{{id}}. {{burger_name}}
 	</li>
 {{/if}}
