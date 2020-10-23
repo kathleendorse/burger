@@ -1,5 +1,69 @@
-<div class = "container-fluid">
-<button type="submit">Submit</button>
+
+  <div class = "container">
+
+     <header class = "row heading">
+      <div class = "col-sm">
+        <h1>Eat-Da-Burger!</h1>
+        <br>
+        <img src="http://res.cloudinary.com/katedorse/image/upload/c_scale,h_217/v1603423887/ClipartKey_343725_g4zpkw.png">
+        <hr>
+      </div>
+    </header>
 
 
-</div>
+
+  
+    <div class = "row">
+
+    <div class = "col-sm">
+      <h3 class="head3">Eat Me!</h2>
+
+        <ul>
+          {{#each burgers}}
+            {{#unless devoured}}
+              {{> burgers/burger-block devoured=false}}
+            {{/unless}}
+          {{/each}}
+        </ul>
+
+    </div>
+
+    <div class = "col-md">
+      <h3 class="head3">Been Eated!</h2>
+
+      <ul class="list list-group">
+        {{#each burgers}}
+          {{#if devoured}}
+            {{> burgers/burger-block devoured=true}}
+          {{/if}}
+        {{/each}}
+      </ul>
+
+    </div>
+
+
+    </div>
+    <div class= "row">
+      <div class = "col-md">
+        <hr>
+        <h2 class="heading">Add-Da-Burger!</h2>
+        <br>
+        <form class="create-form">
+
+          {{!-- NEED TO CHANGE THE ID AND NAME OF THE INPUT --}}
+          <div class="form-group">
+            <input type="text" id="ca" name="name">
+          </div>
+          <button class="btn btn-dark btn-lg" type="submit">Submit</button>
+          
+        </form>
+        
+        
+      </div>
+    </div>
+
+
+  </div>
+
+
+
