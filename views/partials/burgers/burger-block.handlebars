@@ -1,3 +1,4 @@
+{{!-- List items for undevoured burgers --}}
 {{#unless devoured}}
 	<li class="list-group-item d-flex justify-content-between align-items-center">
 		{{id}}. {{burger_name}}
@@ -7,9 +8,9 @@
 </li>
 {{/unless}}
 
-{{!-- not sure we need the data-newdevoured part --}}
+{{!-- List items for burgers that have been devoured --}}
 {{#if devoured}}
-	<li class="list-group-item list-group-item-dark align-items-center" style="border-color:black" data-id="{{id}}" data-newdevoured="{{devoured}}">
+	<li class="list-group-item list-group-item-dark align-items-center" style="border-color:black ">
 		{{id}}. {{burger_name}}
 	</li>
 {{/if}}

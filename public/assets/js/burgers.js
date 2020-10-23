@@ -1,6 +1,6 @@
 $(function(){
 
-    //FUCKIN WORKS!
+    //Create new burger entry
     $(".create-form").on("submit", function(e){
         e.preventDefault();
 
@@ -20,6 +20,7 @@ $(function(){
         );
     });
 
+    //Change devoured status for existing burger entry
     $(".change-devoured").on("click", function(e){
         e.preventDefault();
         var id = $(this).data("id");
@@ -38,21 +39,6 @@ $(function(){
                 location.reload();
             }
         );
-
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 });
