@@ -4,7 +4,7 @@
   ## Description
    This is a web application that allows users to add the names of burgers they would like to eat and then devour them.  The application uses Express, MySQL npm packages to save entries to the database and the Handlebars npm packageto dynamically render data to the webpage.
   
-  [CLICK HERE TO VIEW THE APP](https://git.heroku.com/mysterious-dawn-88307.git)  
+  [CLICK HERE TO VIEW THE APP](https://mysterious-dawn-88307.herokuapp.com/)  
 
   ## Table of Contents
   
