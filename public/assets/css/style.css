@@ -20,6 +20,7 @@ li {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-style: bold;
+    font-display: swap;
 }
 
 #body {
@@ -32,6 +33,7 @@ li {
     font-family: 'Playfair Display', serif;
     font-style: 'oblique';
     font-weight: 900;
+    font-display: swap;
 
 
 }
@@ -41,6 +43,7 @@ li {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: 700;
+    font-display: swap;
 
 }
 
